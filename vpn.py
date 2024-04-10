@@ -11,7 +11,7 @@ ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 start_time_ = time.time()
-1
+
 requests = ['ab -n 1000 -c 10 https://mail.ru/', #
             'ab -n 1000 -c 10 https://vk.com/feed',
             'stress --cpu 4 --timeout 60s',
